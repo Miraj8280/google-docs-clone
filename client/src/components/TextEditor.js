@@ -91,6 +91,7 @@ export default function TextEditor() {
     };
   }, [socket, quill]);
 
+
   const wrapperRef = useCallback((wrapper) => {
     if (wrapper == null) {
       return;

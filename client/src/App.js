@@ -7,11 +7,15 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import { v4 as uuidV4 } from "uuid"
+import { v4 as uuidV4 } from "uuid";
+import ToolBar from "./components/ToolBar";
 
 function App() {
   return (
     <Router>
+
+      <ToolBar />
+
       <Routes>
       <Route path="/" exact element={ <Navigate to={`/documents/${uuidV4()}`} /> }/>
         <Route path="/documents/:id" element={ <TextEditor /> }/>

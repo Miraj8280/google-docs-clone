@@ -12,7 +12,7 @@
     min-height: 11in;
     padding: 1in;
     margin: 1rem;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    border: 1px solid rgb(208, 207, 207);
     background-color: white; 
   }
 
@@ -22,15 +22,23 @@
     justify-content: center;
   }
 
+  .container .ql-editor .ql-blank {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+  }
+
   .container .ql-toolbar.ql-snow {
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: rgb(249, 251, 253);
-    border: none;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    background-color: #ebf5f9;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0.8px solid #ebf5f9;
   }
   
   @page {
