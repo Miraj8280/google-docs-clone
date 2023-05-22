@@ -18,7 +18,7 @@ db.once("open", () => {
 
 const io = require("socket.io")(3001, {
   cors: {
-    origin: "https://google-docs-clone-miraj.vercel.app/",
+    origin: "https://google-docs-clone-miraj.vercel.app",
     methods: ["GET", "POST"],
   },
 });
