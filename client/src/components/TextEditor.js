@@ -24,7 +24,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const skt = io("http://localhost:3001");
+    const skt = io("https://google-docs-clone-server-zeta.vercel.app/");
     setSocket(skt);
  
     return () => {
