@@ -16,7 +16,7 @@ db.once("open", () => {
   console.log("Connected to MongoDB Atlas");
 });
 
-const io = require("socket.io")(3001, {
+const io = require("socket.io")({
   cors: {
     origin: "https://google-docs-clone-miraj.vercel.app",
     methods: ["GET", "POST"],
