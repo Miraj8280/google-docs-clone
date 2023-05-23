@@ -1,54 +1,61 @@
+/* Styles for the toolbar */
 .toolbar {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-  }
-  
-  .toolbar-icon {
-    height: 64px;
-    width: 64px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-  
-  .toolbar-icon img {
-    height: 36px;
-    margin: 4px 4px 4px 8px;
-  }
-  
-  .toolbar-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .toolbar-title {
-    font-size: 18px;
-    height: 24px;
-    width: 100%;
-    color: #666;
-    font-family: Arial, sans-serif;
-    margin-top: 6px;
-  }
-  
-  .toolbar-actions {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  
-  .toolbar-button {
-    border: none;
-    background: none;
-    color: #333;
-    font-size: 14px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .toolbar-button:hover {
-    background-color: #e9e7e7;
-    border-radius: 5px;
-  }
-  
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+/* Styles for the toolbar icon */
+.toolbar-icon {
+  height: 64px;
+  width: 64px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* Styles for the toolbar icon image */
+.toolbar-icon img {
+  height: 36px;
+  margin: 4px 4px 4px 8px;
+}
+
+/* Styles for the toolbar content */
+.toolbar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Styles for the toolbar title */
+.toolbar-title {
+  font-size: 18px;
+  height: 24px;
+  width: 100%;
+  color: #666;
+  font-family: Arial, sans-serif;
+  margin-top: 6px;
+}
+
+/* Styles for the toolbar actions */
+.toolbar-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Styles for the toolbar button */
+.toolbar-button {
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for the toolbar button on hover */
+.toolbar-button:hover {
+  background-color: #e9e7e7;
+  border-radius: 5px;
+}
