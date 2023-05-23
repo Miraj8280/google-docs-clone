@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Document = require("./Document");
-const http = require("http");
 
 mongoose.connect("mongodb+srv://mirajasraf786:miraj123@cluster0.uxmfjq0.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
@@ -17,10 +16,10 @@ db.once("open", () => {
   console.log("Connected to MongoDB Atlas");
 });
 
-const server = http.createServer();
-const io = require("socket.io")(server, {
+
+const io = require("socket.io")(3001, {
   cors: {
-    origin: "https://google-docs-clone-miraj.vercel.app/",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
@@ -53,8 +52,3 @@ async function findOrCreateDocument(id) {
   }
   return await Document.create({ _id: id, data: defaultValue });
 }
-
-const port = 3001; 
-server.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});

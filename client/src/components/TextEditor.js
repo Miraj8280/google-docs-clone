@@ -24,7 +24,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const skt = io("https://google-docs-clone-server-chi.vercel.app/");
+    const skt = io("http://localhost:3001");
     setSocket(skt);
  
     return () => {
